@@ -1,0 +1,88 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/client/client_thread.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+client_thread.h
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/client/client_thread.h
+arpa/inet.h
+-
+netinet/in.h
+-
+sys/socket.h
+-
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/client/client_thread.h
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+unistd.h
+-
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/client/main.c
+stdlib.h
+-
+client_thread.h
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/client/client_thread.h
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/server/main.c
+stdlib.h
+-
+server_thread.h
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/server/server_thread.h
+pthread.h
+-
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/server/server_thread.c
+server_thread.h
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/server/server_thread.h
+netinet/in.h
+-
+netdb.h
+-
+strings.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+signal.h
+-
+time.h
+-
+
+/home/olivier/Desktop/HIVER 2018/operationsystem/tp2/tp2/server/server_thread.h
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+unistd.h
+-
+
