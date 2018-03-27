@@ -20,8 +20,8 @@ extern int num_resources;
 /* Quantité disponible pour chaque resource.  */
 extern int *provisioned_resources;
 
-/* Boolean pour le setup du server*/
-extern bool wasSetup;
+/* Nombre de client*/
+extern int num_clients;
 
 
 typedef struct client_thread client_thread;
@@ -36,8 +36,18 @@ struct client_thread
 void ct_init (client_thread *);
 void ct_create_and_start (client_thread *);
 void ct_wait_server ();
-int ct_open_socket ();
+void ct_open_socket (int port_number);
+void send_test(int socket_fd);
 
 void st_print_results (FILE *, bool);
+void close_socket(int socket_fd);
+void send_setupInfo(int socket_fd);
+void ct_create_and_setup(client_thread * ct);
+
+//new functions
+void send_begRequest(int socket_fd);
+void send_proRequest(int socket_fd);
+void send_INIrequest(int client_id, int socket_fd);
+int randint(int n, int client_id);
 
 #endif // CLIENTTHREAD_H

@@ -20,7 +20,7 @@ struct server_thread
 };
 
 void st_open_socket (int port_number);
-void st_init (void);
+void st_init ();
 void st_process_request (server_thread *, int);
 void st_signal (void);
 void *st_code (void *);
